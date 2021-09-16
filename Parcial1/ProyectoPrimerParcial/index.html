@@ -4,68 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <title>Document</title>
 </head>
 <body>
 
-    <table border="6" bordercolor="green" align="center">
-        <tr>
-            <th>Mesa</th>
-            <th>Estado</th>
-            <th>Tiempo Inicio</th>
-            <th>Tiempo Final</th>
-            <th>Precio</th>
-        </tr>
+    <table align="center">
+        <thead>
+            <tr>
+                <th>Mesa</th>
+                <th>Estado</th>
+                <th>Tiempo Inicio</th>
+                <th>Tiempo Final</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> Mesa 1</td>
+                <td><img src="tableOff.png" alt="foco" id="imagen" onclick="cambiar_estado_mesa('imagen');"></td>
+                <td id="reloj_inicio_1"></td>
+                <td id="reloj_final_1"></td>
+                <td id="precio1"></td>
+            </tr>
 
 
-        <tr>
-            <td> Mesa 1</td>
-            <td><img src="focoOff.png" alt="foco" id="imagen" onclick="cambiar_estado_mesa('imagen');"></td>
-            <td id="reloj_inicio_1"></td>
-            <td id="reloj_final_1"></td>
-            <td id="precio1"></td>
-        </tr>
+            <tr>
+                <td> Mesa 2</td>
+            <td><img src="tableOff.png" alt="foco2" id="imagen2" onclick="cambiar_estado_mesa('imagen2');"></td>
+                <td id="reloj_inicio_2"></td>
+                <td id="reloj_final_2"></td>
+                <td id="precio2"></td>
+            </tr>
 
+            <tr>
+                <td> Mesa 3</td>
+            <td><img src="tableOff.png" alt="foco3" id="imagen3" onclick="cambiar_estado_mesa('imagen3');"></td>
+                <td id="reloj_inicio_3"></td>
+                <td id="reloj_final_3"></td>
+                <td id="precio3"></td>
+            </tr>
 
-        <tr>
-            <td> Mesa 2</td>
-           <td><img src="focoOff.png" alt="foco2" id="imagen2" onclick="cambiar_estado_mesa('imagen2');"></td>
-            <td id="reloj_inicio_2"></td>
-            <td id="reloj_final_2"></td>
-            <td id="precio2"></td>
-        </tr>
+            <tr>
+                <td> Mesa 4</td>
+            <td><img src="tableOff.png" alt="foco4" id="imagen4" onclick="cambiar_estado_mesa('imagen4');"></td>
+                <td id="reloj_inicio_4"></td>
+                <td id="reloj_final_4"></td>
+                <td id="precio4"></td>
+            </tr>
 
-        <tr>
-            <td> Mesa 3</td>
-           <td><img src="focoOff.png" alt="foco3" id="imagen3" onclick="cambiar_estado_mesa('imagen3');"></td>
-            <td id="reloj_inicio_3"></td>
-            <td id="reloj_final_3"></td>
-            <td id="precio3"></td>
-        </tr>
+            <tr>
+                <td> Mesa 5</td>
+            <td><img src="tableOff.png" alt="foco5" id="imagen5" onclick="cambiar_estado_mesa('imagen5');"></td>
+                <td id="reloj_inicio_5"></td>
+                <td id="reloj_final_5"></td>
+                <td id="precio5"></td>
+            </tr>
 
-        <tr>
-            <td> Mesa 4</td>
-           <td><img src="focoOff.png" alt="foco4" id="imagen4" onclick="cambiar_estado_mesa('imagen4');"></td>
-            <td id="reloj_inicio_4"></td>
-            <td id="reloj_final_4"></td>
-            <td id="precio4"></td>
-        </tr>
-
-        <tr>
-            <td> Mesa 5</td>
-           <td><img src="focoOff.png" alt="foco5" id="imagen5" onclick="cambiar_estado_mesa('imagen5');"></td>
-            <td id="reloj_inicio_5"></td>
-            <td id="reloj_final_5"></td>
-            <td id="precio5"></td>
-        </tr>
-
-        <tr>
-            <td> Mesa 6</td>
-           <td><img src="focoOff.png" alt="foco6" id="imagen6" onclick="cambiar_estado_mesa('imagen6');"></td>
-            <td id="reloj_inicio_6"></td>
-            <td id="reloj_final_6"></td>
-            <td id="precio6"></td>
-        </tr>
+            <tr>
+                <td> Mesa 6</td>
+            <td><img src="tableOff.png" alt="foco6" id="imagen6" onclick="cambiar_estado_mesa('imagen6');"></td>
+                <td id="reloj_inicio_6"></td>
+                <td id="reloj_final_6"></td>
+                <td id="precio6"></td>
+            </tr>
+        </tbody>
     
 
     <script src="billar.js"></script>

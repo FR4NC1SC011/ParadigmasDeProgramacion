@@ -1,0 +1,81 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 6px solid black;
+  }
+  
+  thead th:nth-child(1) {
+    border: none;
+    width: 25%;
+  }
+  
+  thead th:nth-child(2) {
+    border: none;
+    width: 35%;
+  }
+  
+  thead th:nth-child(3) {
+    border: none;
+    width: 20%;
+  }
+  
+  thead th:nth-child(4) {
+    border: none;
+    width: 20%;
+  }
+
+  thead th:nth-child(5) {
+    border: none;
+    width: 35%;
+  } 
+  
+  th, td {
+    padding: 20px;
+  }
+
+
+/*  Tipografia   */
+
+html {
+    /* font-family: 'helvetica neue', helvetica, arial, sans-serif; */
+    /* font-family: -apple-system, BlinkMacSystemFont; */
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  thead th, tfoot th {
+    font-family: 'Rock Salt', cursive;
+    /* font-family: 'Merriweather', cursive; */
+    /* font-family: -apple-system, BlinkMacSystemFont; */
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  /* tfoot th {
+    text-align: right;
+  } */
+
+  
+  /* Colores */
+
+thead, tfoot {
+    /* background: url(leopardskin.jpg); */
+    color: black;
+    text-shadow: 1px 1px 1px gray;
+  }
+  
+  thead th, tfoot th, tfoot td {
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)); */
+    border: 3px solid black;
+  }
+  

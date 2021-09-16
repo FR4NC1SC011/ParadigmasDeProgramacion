@@ -28,7 +28,7 @@ function cambiar_estado_mesa(numero_mesa) {
 //                FUNCIONES PARA CONTROLAR LAS MESAS 
 // ----------------------------------------------------------------------
 function x(foco, reloj_inicio_mesa, numero_mesa, reloj_final_mesa) {
-    if (foco.src.match("focoOff")) {
+    if (foco.src.match("tableOff")) {
         reservar_mesa(foco, reloj_inicio_mesa, numero_mesa, reloj_final_mesa);
     } else {
         desocupar_mesa(foco, numero_mesa, reloj_final_mesa);
@@ -36,14 +36,14 @@ function x(foco, reloj_inicio_mesa, numero_mesa, reloj_final_mesa) {
 }
 
 function reservar_mesa(img_mesa, mesa_reservar, numero_mesa, reloj_final_mesa) {
-    img_mesa.src = "focoOn.png"           
+    img_mesa.src = "tableOn.png"           
     clearTime(reloj_final_mesa);
     getTime(mesa_reservar, "Hora Inicio: ");
     get_price(numero_mesa);
 }
 
 function desocupar_mesa(img_mesa, mesa_n, reloj_mesa) {
-    img_mesa.src = "focoOff.png"
+    img_mesa.src = "tableOff.png"
 
     switch(mesa_n) {
         case 'mesa1':
@@ -161,7 +161,7 @@ function calcular_precio(precio_mesa_n) {
             segundos6++;
             break;
     }
-    document.getElementById(precio_mesa_n).innerHTML = "TOTAL: $" + precio;
+    document.getElementById(precio_mesa_n).innerHTML = "TOTAL: $" + precio.toFixed(3);
 }
 
 function stopPrice(price_n) {
