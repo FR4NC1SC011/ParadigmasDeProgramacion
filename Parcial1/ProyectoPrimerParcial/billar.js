@@ -71,7 +71,6 @@ function desocupar_mesa(img_mesa, mesa_n, reloj_mesa) {
             stopPrice('precio6');
             break
     }
-    // stopTime();
 }
 
 // ----------------------------------------------------------------------
@@ -86,11 +85,6 @@ function getTime(reloj_n, string_start_end_time) {
 function clearTime(reloj_n) {
     document.getElementById(reloj_n).innerHTML = "";
 }
-
-// function stopTime(timerId) {
-//     clearInterval(timerId);
-// }
-
 
 // ----------------------------------------------------------------------
 //                FUNCIONES PARA CALCULAR PRECIO DE LAS MESAS

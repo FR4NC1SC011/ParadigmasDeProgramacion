@@ -38,15 +38,11 @@ table {
 /*  Tipografia   */
 
 html {
-    /* font-family: 'helvetica neue', helvetica, arial, sans-serif; */
-    /* font-family: -apple-system, BlinkMacSystemFont; */
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Roboto', sans-serif;
   }
   
   thead th, tfoot th {
-    font-family: 'Rock Salt', cursive;
-    /* font-family: 'Merriweather', cursive; */
-    /* font-family: -apple-system, BlinkMacSystemFont; */
+    font-family: 'Roboto', cursive;
   }
   
   th {
@@ -61,21 +57,13 @@ html {
     text-align: center;
   }
   
-  /* tfoot th {
-    text-align: right;
-  } */
-
-  
   /* Colores */
-
 thead, tfoot {
-    /* background: url(leopardskin.jpg); */
     color: black;
     text-shadow: 1px 1px 1px gray;
   }
   
-  thead th, tfoot th, tfoot td {
-    /* background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)); */
+  thead th {
     border: 3px solid black;
   }
   
