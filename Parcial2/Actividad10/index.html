@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Escribe el Nombre:</p>
+    <input type="text" id="nombre">
+    <button onclick="agregarNombre()">Agregar</button>
+    <button onclick="limpiar()">Limpiar Nombres</button>
+
+    <ul id="lista">
+        <!-- <li>Kobe Bryant</li>        
+        <li>Michael Jordan</li>        
+        <li>Lebron James</li>         -->
+    </ul>
+
+    <script>
+        let lista = document.getElementById("lista");
+        // let nombres = ['Kobe Bryant', 'Michael Jordan', 'Lebron James'];
+        let nombres = [];
+
+        const mostrarNombres = () => nombres.map(valor => {
+            let varLi = document.createElement("li");
+            varLi.innerHTML = valor;
+            lista.appendChild(varLi);
+        })
+
+        const agregarNombre = () => {
+            let nombre = document.getElementById("nombre");
+            nombres.push(nombre.value);
+            mostrarNombres();
+        }
+
+        const limpiar = () => {
+            lista.innerHTML = "";
+            nombre.innerHTML = "";
+        }
+
+        // mostrarNombres();
+        
+    </script>
+    
+</body>
+</html>
