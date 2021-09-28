@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var persona = {
+            nombre: "Richard Branson",
+            edad: 71,
+            genero: "Masculino",
+            intereses: ['espacio', 'esqui'],
+
+            saludo: function() {
+                alert("saludos");
+            } 
+        };
+
+        // persona.saludo();
+
+        let personas = [
+        {
+            nombre: "Richard Branson",
+            promedio: 4.5,
+            company: "Virgin"
+        },
+
+        {
+            nombre: "Elon Musk",
+            promedio: 199.6,
+            company: "Tesla"
+        },
+
+        {
+            nombre: "Jeff Bezos",
+            promedio: 198.7,
+            company: "Amazon"
+        },
+
+        {
+            nombre: "Carlos Slim",
+            promedio: 77, 
+            company: "Telmex"
+        },
+
+    ]
+
+    var x = personas.sort((a,b) => a.promedio > b.promedio ? 1 : -1);
+    alert(x); 
+    alert(personas);
+        
+    </script>
+    
+</body>
+</html>
