@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  
+    <div id='app'>
+      <p>{{carrera}}</p>
+
+    </div>
+      
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+      const app = Vue.createApp({
+          data(){
+            return {
+              materia: "Paradigmas de Programacion",
+              semestre: "Sexto",
+              carrera: "Sistemas",
+            }
+          }
+        })
+
+        const vn = app.mount('#app')
+    </script>
+  </body>
+</html>
